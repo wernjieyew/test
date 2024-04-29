@@ -1,0 +1,452 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 12, 2024, 4:28:54 PM
+    Author     : Yew
+*/
+
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+body{
+	background-image: url("/Ass/img/managerBackground.jpg");
+	background-position:center right;
+        background-size: cover;
+	background-attachment: fixed;
+}
+.wrapper .sidebar{
+	background: #F5F5DC;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 225px;
+	height: 100%;
+	padding: 20px 0;
+	transition: all 0.5s ease;
+}
+.wrapper .sidebar .profile{
+	margin-bottom: 30px;
+	text-align: center;
+}
+.wrapper .sidebar ul li a{
+	display: block;
+	padding: 13px 30px;
+	border-bottom: 1px solid #48108d;
+	color: rgb(0, 0, 0);
+	font-size: 18px;
+	position: relative;
+    font-weight: 700;
+}
+.wrapper .sidebar ul li a .icon{
+	color: #dee4ec;
+	width: 30px;
+	display: inline-block;
+}
+.wrapper .section{
+	width: 100%;
+	margin-left: 225px;
+	transition: all 0.5s ease;
+	position: fixed;
+}
+.wrapper .section .top_navbar{
+	background:  #DCDCDC;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+
+ 
+}
+.wrapper .section .top_navbar .hamburger a{
+	font-size: 28px;
+	color: #000000;
+	                    
+}
+.wrapper .section .top_navbar .hamburger a:hover{
+	color: #000000;
+}
+body.active .wrapper .sidebar{
+	left: -225px;
+}
+body.active .wrapper .section{
+	margin-left: 0;
+	width: 100%;
+}
+.sidebar li a:hover {
+    background-color: #edd30e;
+    color:#f4fbff
+}
+
+.buttoncontainer{	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.container {
+    width: 400px;
+    height: 630px;
+    background: #F5F5DC;
+    color: #000000;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+  }
+h1{
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+.container input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+}
+.container input[type="password"]{
+	border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.container input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #FFA07A;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.container input[type="reset"]{
+	border: none;
+    outline: none;
+    height: 40px;
+    background: #FFA07A;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.container label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.container input{
+    width: 100%;
+    margin-bottom: 10px;    
+}
+.container input[type="radio"]{
+    width: 20%;
+    margin-bottom: 10px; 
+    height: 15px;
+    font-size: 18px;
+}
+.container a{
+	color: #f7f7f7;
+	font-size: 16px;
+	line-height: 20px;
+}
+.container a:hover{
+	color: #FF8C00;
+}
+button {
+	background-color: #A0522D;
+	border: none;
+	color: rgb(255, 255, 255);
+	padding: 18px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 24px;
+	margin: 4px 2px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+	margin-bottom: 10px;
+  }
+  
+button:hover {
+	background-color: #8a4b03;
+	color: #fff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+ span{
+    color: #fc1100;
+}
+
+.qgg-table{
+	border-collapse: collapse;
+	width:84%;
+	border:1px solid #c6c6c6;
+	margin-bottom:20px;
+	margin-left:235px;
+}
+.qgg-table th{
+	border-collapse: collapse;
+	border-right:1px solid #c6c6c6;
+	border-bottom:1px solid #c6c6c6;
+	background-color:#ddeeff; 
+	padding:5px 9px;
+	font-size:20px;
+	font-weight:normal;
+	text-align:center;
+}
+.qgg-table td{
+	border-collapse: collapse;
+	border-right:1px solid #c6c6c6;
+	border-bottom:1px solid #c6c6c6; 
+	padding:5px 9px;
+	font-size:14px;
+	font-weight:normal;
+	text-align:center;
+	word-break: break-all;
+}
+.qgg-table tr:nth-child(odd){
+	background-color:#fff ; 
+}
+.qgg-table tr:nth-child(even){
+	background-color: #f8f8f8;
+}
+
+.long-container{
+	height:300px;
+	width:60%;   
+	background-color:rgb(117, 190, 217); 
+	text-align:center;
+	padding: 50px;
+	margin: auto;
+	font-family: Open-Sans,sans-serif;
+	font-size: 1.4em;
+	line-height: 1.6;
+	box-sizing: border-box;
+	top: 50%;
+    left: 55%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+	padding-top: 60px;
+}
+.long-container h1{
+	color:rgb(42, 4, 81);
+}
+
+.long-container button{
+	width:17em;
+	height:5em;
+	background-color:rgb(38, 5, 134);
+	font-size:16px;
+	font-weight:900;
+	color:rgb(251, 10, 247);
+	margin-top: 35px;
+}
+span.edit-value{
+    color:white;
+    background-color:#0cdf33;
+}
+.edit-btn{
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: .3rem 1rem;
+
+}
+span.delete-value{
+    color:white;
+    background-color:#f50b0b;
+}
+.delete-btn{
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: .3rem;
+
+}
+.product-container {
+	width: 400px;
+    height: 1050px;
+    background: #AFEEEE;
+    color: #000000;
+    top: 75%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+  }
+  .product-container input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.product-container input[type="submit"],input[type="reset"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #2F4F4F;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.product-container label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.product-container input{
+    width: 100%;
+    margin-bottom: 10px;    
+}
+.product-container a{
+	color: #000000;
+	font-size: 16px;
+	line-height: 20px;
+}
+.product-container a:hover{
+	color: #fee908;
+}
+.product-table{
+	border-collapse: collapse;
+	width:85%;
+	border:1px solid #c6c6c6;
+	margin-bottom:20px;
+	margin-left:220px;
+}
+.product-table th{
+	border-collapse: collapse;
+	border-right:1px solid #c6c6c6;
+	border-bottom:1px solid #c6c6c6;
+	background-color:#ddeeff; 
+	padding:5px 9px;
+	font-size:15px;
+	font-weight:normal;
+	text-align:center;
+}
+.product-table td{
+	border-collapse: collapse;
+	border-right:1px solid #c6c6c6;
+	border-bottom:1px solid #c6c6c6; 
+	padding:0px 0px;
+	font-size:14px;
+	font-weight:normal;
+	text-align:center;
+	word-break: break-all;
+        width:55px;
+}
+.product-table tr:nth-child(odd){
+	background-color:#fff ; 
+}
+.product-table tr:nth-child(even){
+	background-color: #f8f8f8;
+}
+.loginbox{
+    width: 400px;
+    height: 650px;
+    background: #708090;
+    color: #ffffff;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+	color: #ffffff;
+}
+
+.loginbox label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 10px;    
+}
+
+.loginbox input[type="text"], input[type="password"], input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #DAA520;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #556B2F;
+    color: #ffffff;    
+}
+
+.loginbox input[type="reset"]{
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 50px;
+    background: #DAA520;
+    color: #ffffff;
+    font-size: 10px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="reset"]:hover{
+    cursor: pointer;
+    background: rgb(46, 157, 3);
+    color: #000;    
+}
+
+.loginbox a{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(255, 255, 255)
+}
+
+.loginbox a:hover{
+    color: #fdf501;
+}
+  
+  

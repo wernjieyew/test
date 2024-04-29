@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 10, 2024, 3:02:29 PM
+    Author     : Yew
+*/
+body{
+    margin: 0;
+    padding: 450px;
+    background: url("/Ass/img/registerBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.loginbox{
+    width: 400px;
+    height: 900px;
+    background: #014458;
+    color: #f8f8f8;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 10px;    
+}
+
+.loginbox input[type="text"], input[type="password"], input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #4ad2e7;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #035b71;
+    color: #ffffff;    
+}
+
+.loginbox input[type="reset"]{
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 50px;
+    background: #03ed51;
+    color: #000000;
+    font-size: 10px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="reset"]:hover{
+    cursor: pointer;
+    background: rgb(46, 157, 3);
+    color: #000;    
+}
+
+.loginbox a{
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(255, 255, 255)
+}
+
+.loginbox a:hover{
+    color: #fdf501;
+}
+span{
+    color: #fc1100;
+}
+
+
